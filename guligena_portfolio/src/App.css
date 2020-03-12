@@ -38,3 +38,32 @@
     transform: rotate(360deg);
   }
 }
+.content {
+  position: fixed;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color:#FFA372;
+  width: 100%;
+  padding: 20px;
+  font-family: 'Oleo Script', cursive;
+  font-size: x-large;
+}
+
+.navbar {
+  position: fixed;
+  top: 220px;
+  width: 100%;
+  padding: 20px;
+  font-size: xx-large;
+  
+}
+#myVideo {
+  position: relative;
+}
+
+.navfont.navcolor {
+   font-family: 'Pacifico', cursive; 
+   color:#ed6663;
+   font-size: x-large;
+}
+
