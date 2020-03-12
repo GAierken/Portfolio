@@ -38,3 +38,13 @@
     transform: rotate(360deg);
   }
 }
+.content {
+  position: fixed;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color:#FFA372;
+  width: 100%;
+  padding: 20px;
+  font-family: 'Oleo Script', cursive;
+  font-size: x-large;
+}
