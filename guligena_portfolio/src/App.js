@@ -41,13 +41,13 @@ class App extends React.Component {
       <Container className="navbar">
         <Breadcrumbs aria-label="breadcrumb">
           <RouterLink className="navfont navcolor" to="/" >
-            Bio
+            About Me
           </RouterLink>
           <RouterLink className="navfont navcolor" to="/projects" >
             Projects
           </RouterLink>
-          <RouterLink  className="navfont navcolor" to="/blogs">Blog</RouterLink>
-          <RouterLink  className="navfont navcolor" to="/contact">Contact me</RouterLink>
+          <RouterLink  className="navfont navcolor" to="/blogs">Blogs</RouterLink>
+          <RouterLink  className="navfont navcolor" to="/contact">Contact Me</RouterLink>
           <RouterLink  className="navfont navcolor" to="/resume">Resume</RouterLink>
       </Breadcrumbs>
       </Container>
