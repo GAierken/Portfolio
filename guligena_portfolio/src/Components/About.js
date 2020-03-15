@@ -4,7 +4,7 @@ import { Container } from '@material-ui/core'
 export default class About extends Component {
     render() {
         return (
-            <Container>About</Container>
+            <Container className="about">About</Container>
         )
     }
 }

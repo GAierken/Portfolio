@@ -4,7 +4,7 @@ import { Container } from '@material-ui/core'
 export default class Project extends Component {
     render() {
         return (
-           <Container>Projects</Container>
+           <Container className="projects">Projects</Container>
         )
     }
 }

@@ -4,7 +4,7 @@ import { Grid, GridList } from '@material-ui/core'
 export default class Contact extends Component {
     render() {
         return (
-            <GridList>
+            <GridList className="contacts">
                 <Grid>ONe</Grid>
             </GridList>
         )
