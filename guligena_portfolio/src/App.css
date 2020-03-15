@@ -67,3 +67,11 @@
    font-size: x-large;
 }
 
+
+.resume {
+  position: inherit;
+  top: 270px;
+  width: 100%;
+  padding: 20px;
+  font-size: xx-large;
+}

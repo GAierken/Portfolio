@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
+import { Grid, GridList } from '@material-ui/core'
 
 export default class Contact extends Component {
     render() {
         return (
-            <div>
-                Contact
-            </div>
+            <GridList>
+                <Grid>ONe</Grid>
+            </GridList>
         )
     }
 }

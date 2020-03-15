@@ -1,11 +1,10 @@
 import React, { Component } from 'react'
+import { Container } from '@material-ui/core'
 
 export default class Blog extends Component {
     render() {
         return (
-            <div>
-                Blog
-            </div>
+            <Container>Blogs</Container>
         )
     }
 }
