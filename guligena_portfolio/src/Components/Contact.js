@@ -34,11 +34,11 @@ export default class Contact extends Component {
         return (
             <React.Fragment>
               <GridList >
-                <Grid><GitHubIcon onClick={this.handleGitHubClick} style={{ fontSize: 23, position: 'fixed', color: '#ed6663', top: 0, left: 0 }}  className="contacts"/></Grid>
-                <Grid><LinkedInIcon onClick={this.handleLinkedInClick} style={{ fontSize: 25, position: 'fixed', color: '#ed6663', top: 0, left: 40 }} className="linkedin"/></Grid>
-                <Grid><FacebookIcon onClick={this.handleFacebookClick} style={{ fontSize: 25, position: 'fixed', color: '#ed6663', top: 0, left: 80 }} className="linkedin"/></Grid>
-                <Grid><DescriptionIcon onClick={this.handleDesClick} style={{ fontSize: 25, position: 'fixed', color: '#ed6663', top: 0, left: 120 }} className="linkedin"/></Grid>
-                <Grid><EmailIcon onClick={this.handleMailClick} style={{ fontSize: 25, position: 'fixed', color: '#ed6663', top: 0, left: 160 }}  className="email"/></Grid>
+                <Grid><GitHubIcon onClick={this.handleGitHubClick} style={{ fontSize: 23, position: 'fixed', color: '#98d6ea', top: 0, left: 0 }}  className="contacts"/></Grid>
+                <Grid><LinkedInIcon onClick={this.handleLinkedInClick} style={{ fontSize: 25, position: 'fixed', color: '#98d6ea', top: 0, left: 40 }} className="linkedin"/></Grid>
+                <Grid><FacebookIcon onClick={this.handleFacebookClick} style={{ fontSize: 25, position: 'fixed', color: '#98d6ea', top: 0, left: 80 }} className="linkedin"/></Grid>
+                <Grid><DescriptionIcon onClick={this.handleDesClick} style={{ fontSize: 25, position: 'fixed', color: '#98d6ea', top: 0, left: 120 }} className="linkedin"/></Grid>
+                <Grid><EmailIcon onClick={this.handleMailClick} style={{ fontSize: 25, position: 'fixed', color: '#98d6ea', top: 0, left: 160 }}  className="email"/></Grid>
               </GridList>
             </React.Fragment>
             

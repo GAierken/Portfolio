@@ -5,7 +5,6 @@ import Mp4 from './Love-Coding.mp4'
 import { Container } from '@material-ui/core';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 import About from './Components/About';
-import Blogs from './Components/Blog';
 import Contact from './Components/Contact';
 import ProjectContainer from './Components/ProjectContainer';
 import Resume from './Components/Resume'
@@ -38,13 +37,11 @@ class App extends React.Component {
           <RouterLink className="navfont navcolor" to="/projects" onClick={this.handleClick} >
             Projects
           </RouterLink>
-          <RouterLink  className="navfont navcolor" to="/blogs" onClick={this.handleClick}>Blogs</RouterLink>
           <RouterLink  className="navfont navcolor" to="/resume" onClick={this.handleClick}>Resume</RouterLink>
       </Breadcrumbs>
       </Container>
       <Switch>
        <Route exact path="/" component={ About }></Route>
-       <Route exact path="/blogs" component={ Blogs }></Route>
        <Route exact path="/projects" component={ ProjectContainer }></Route>
        <Route exact path="/resume" component={ Resume }></Route>
       </Switch>
