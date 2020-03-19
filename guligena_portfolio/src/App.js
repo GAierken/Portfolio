@@ -7,7 +7,7 @@ import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 import About from './Components/About';
 import Blogs from './Components/Blog';
 import Contact from './Components/Contact';
-import Projects from './Components/Project';
+import ProjectContainer from './Components/ProjectContainer';
 import Resume from './Components/Resume'
 import { Link as RouterLink } from 'react-router-dom';
 
@@ -46,7 +46,7 @@ class App extends React.Component {
        <Route exact path="/" component={ About }></Route>
        <Route exact path="/blogs" component={ Blogs }></Route>
        <Route exact path="/contact" component={ Contact }></Route>
-       <Route exact path="/projects" component={ Projects }></Route>
+       <Route exact path="/projects" component={ ProjectContainer }></Route>
        <Route exact path="/resume" component={ Resume }></Route>
       </Switch>
     </div>
