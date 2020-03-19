@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-import { Grid, GridList, Container } from '@material-ui/core'
+import { Grid, GridList } from '@material-ui/core'
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import EmailIcon from '@material-ui/icons/Email';
 import FacebookIcon from '@material-ui/icons/Facebook';
-import {Redirect} from 'react-router'
+
 
 
 export default class Contact extends Component {
@@ -29,10 +29,10 @@ export default class Contact extends Component {
         return (
             <React.Fragment>
               <GridList >
-                <Grid><GitHubIcon onClick={this.handleGitHubClick} style={{ fontSize: 60, position: 'fixed', color: '#ed6663', top: 300 }}  className="contacts"/></Grid>
-                <Grid><LinkedInIcon onClick={this.handleLinkedInClick} style={{ fontSize: 60, position: 'fixed', color: '#ed6663', top: 400 }} className="linkedin"/></Grid>
-                <Grid><FacebookIcon onClick={this.handleFacebookClick} style={{ fontSize: 60, position: 'fixed', color: '#ed6663', top: 500 }} className="linkedin"/></Grid>
-                <Grid><EmailIcon onClick={this.handleMailClick} style={{ fontSize: 60, position: 'fixed', color: '#ed6663', top: 600 }}  className="email"/></Grid>
+                <Grid><GitHubIcon onClick={this.handleGitHubClick} style={{ fontSize: 28, position: 'fixed', color: '#ed6663', top: 0, left: 0 }}  className="contacts"/></Grid>
+                <Grid><LinkedInIcon onClick={this.handleLinkedInClick} style={{ fontSize: 30, position: 'fixed', color: '#ed6663', top: 0, left: 40 }} className="linkedin"/></Grid>
+                <Grid><FacebookIcon onClick={this.handleFacebookClick} style={{ fontSize: 30, position: 'fixed', color: '#ed6663', top: 0, left: 80 }} className="linkedin"/></Grid>
+                <Grid><EmailIcon onClick={this.handleMailClick} style={{ fontSize: 30, position: 'fixed', color: '#ed6663', top: 0, left: 120 }}  className="email"/></Grid>
               </GridList>
             </React.Fragment>
             
