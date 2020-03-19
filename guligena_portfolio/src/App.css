@@ -69,9 +69,64 @@
 
 
 .resume {
-  position: inherit;
+  position: fixed;
   top: 270px;
   width: 100%;
   padding: 20px;
   font-size: xx-large;
 }
+
+.about {
+  position: fixed;
+  top: 270px;
+  width: 100%;
+  padding: 20px;
+  font-size: xx-large;
+  color: #ed6663;
+}
+
+.projects {
+  position: fixed;
+  top: 270px;
+  width: 100%;
+  padding: 20px;
+  font-size: xx-large;
+  color: #ed6663;
+}
+
+.blogs {
+  position: fixed;
+  top: 270px;
+  width: 100%;
+  padding: 20px;
+  font-size: xx-large;
+  color: #ed6663;
+}
+
+/* .contacts {
+  position: fixed;
+  top: 270px;
+  width: 100%;
+  padding: 20px;
+  font-size: xx-large;
+  color: #ed6663;
+  
+}
+
+.linkedin {
+  position: fixed;
+  top: 300px;
+  width: 100%;
+  padding: 20px;
+  font-size: xx-large;
+  color: #ed6663;
+}
+
+.email  {
+  position: fixed;
+  top: 330px;
+  width: 100%;
+  padding: 20px;
+  font-size: xx-large;
+  color: #ed6663;
+} */

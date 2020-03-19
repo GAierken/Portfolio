@@ -4,7 +4,7 @@ import { Container } from '@material-ui/core'
 export default class Blog extends Component {
     render() {
         return (
-            <Container>Blogs</Container>
+            <Container className="blogs">Blogs</Container>
         )
     }
 }
