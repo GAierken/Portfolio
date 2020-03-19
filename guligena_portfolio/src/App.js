@@ -28,6 +28,7 @@ class App extends React.Component {
       <Container className="content">
         <h1>GULIGENA AIERKEN</h1>
           <p>Full Stack Developer | Software Engineer</p>
+          <Contact/>
       </Container>
       <Container className="navbar">
         <Breadcrumbs aria-label="breadcrumb">
@@ -38,14 +39,12 @@ class App extends React.Component {
             Projects
           </RouterLink>
           <RouterLink  className="navfont navcolor" to="/blogs" onClick={this.handleClick}>Blogs</RouterLink>
-          <RouterLink  className="navfont navcolor" to="/contact" onClick={this.handleClick}>Contact Me</RouterLink>
           <RouterLink  className="navfont navcolor" to="/resume" onClick={this.handleClick}>Resume</RouterLink>
       </Breadcrumbs>
       </Container>
       <Switch>
        <Route exact path="/" component={ About }></Route>
        <Route exact path="/blogs" component={ Blogs }></Route>
-       <Route exact path="/contact" component={ Contact }></Route>
        <Route exact path="/projects" component={ ProjectContainer }></Route>
        <Route exact path="/resume" component={ Resume }></Route>
       </Switch>
