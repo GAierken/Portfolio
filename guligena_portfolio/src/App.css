@@ -51,10 +51,10 @@
 
 .navbar {
   position: fixed;
-  top: 220px;
+  top: 175px;
   width: 100%;
   padding: 20px;
-  font-size: xx-large;
+  font-size: x-large;
   
 }
 #myVideo {
@@ -64,7 +64,7 @@
 .navfont.navcolor {
    font-family: 'Pacifico', cursive; 
    color:#ed6663;
-   font-size: x-large;
+   font-size: large;
 }
 
 
