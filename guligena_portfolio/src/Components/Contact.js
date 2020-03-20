@@ -31,9 +31,11 @@ export default class Contact extends Component {
     
     handleResumeClick = () => {
         console.log('clicked')
+        
     }
     
     render() {
+       
         return (
             <React.Fragment>
               <GridList >

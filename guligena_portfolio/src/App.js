@@ -9,13 +9,14 @@ import Contact from './Components/Contact';
 import ProjectContainer from './Components/ProjectContainer';
 import { Link as RouterLink } from 'react-router-dom';
 
-
 class App extends React.Component {
  
 
  
   
  render() {
+   
+   
   return (
     
     <div className="App">

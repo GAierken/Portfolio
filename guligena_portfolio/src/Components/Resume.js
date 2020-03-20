@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PDF from 'react-pdf-js'
-import myResume from './Guligena_Aierken_Resume.pdf'
 import { Container } from '@material-ui/core';
 
 
