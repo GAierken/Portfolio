@@ -42,7 +42,7 @@
   position: fixed;
   top: 0;
   background: rgba(0, 0, 0, 0.5);
-  color:#FFA372;
+  color:#ffffff;
   width: 100%;
   padding: 20px;
   font-family: 'Oleo Script', cursive;
@@ -63,14 +63,14 @@
 
 .navfont.navcolor {
    font-family: 'Pacifico', cursive; 
-   color:#ed6663;
+   color:#ffffff;
    font-size: large;
 }
 
 
 .resume {
-  position: fixed;
-  top: 270px;
+  position: absolute;
+  top: 220px;
   width: 100%;
   padding: 20px;
   font-size: xx-large;
@@ -103,30 +103,3 @@
   color: #ed6663;
 }
 
-/* .contacts {
-  position: fixed;
-  top: 270px;
-  width: 100%;
-  padding: 20px;
-  font-size: xx-large;
-  color: #ed6663;
-  
-}
-
-.linkedin {
-  position: fixed;
-  top: 300px;
-  width: 100%;
-  padding: 20px;
-  font-size: xx-large;
-  color: #ed6663;
-}
-
-.email  {
-  position: fixed;
-  top: 330px;
-  width: 100%;
-  padding: 20px;
-  font-size: xx-large;
-  color: #ed6663;
-} */
