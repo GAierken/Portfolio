@@ -7,7 +7,6 @@ import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 import About from './Components/About';
 import Contact from './Components/Contact';
 import ProjectContainer from './Components/ProjectContainer';
-import Resume from './Components/Resume'
 import { Link as RouterLink } from 'react-router-dom';
 
 
@@ -37,13 +36,11 @@ class App extends React.Component {
           <RouterLink className="navfont navcolor" to="/projects" onClick={this.handleClick} >
             Projects
           </RouterLink>
-          <RouterLink  className="navfont navcolor" to="/resume" onClick={this.handleClick}>Resume</RouterLink>
       </Breadcrumbs>
       </Container>
       <Switch>
        <Route exact path="/" component={ About }></Route>
        <Route exact path="/projects" component={ ProjectContainer }></Route>
-       <Route exact path="/resume" component={ Resume }></Route>
       </Switch>
     </div>
     );
