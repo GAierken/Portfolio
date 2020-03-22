@@ -5,7 +5,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import EmailIcon from '@material-ui/icons/Email';
 import DescriptionIcon from '@material-ui/icons/Description';
 import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
-
+import {Link} from 'react-router-dom'
 
 export default class Contact extends Component {
     
@@ -40,7 +40,7 @@ export default class Contact extends Component {
                 <Grid><Tooltip title="LinkedIn"><LinkedInIcon onClick={this.handleLinkedInClick} style={{ fontSize: 25, position: 'fixed', color: '#ffffff', top: 0, left: 40 }} className="linkedin"/></Tooltip></Grid>
                 <Grid><Tooltip title="Blog"><DescriptionIcon onClick={this.handleDesClick} style={{ fontSize: 25, position: 'fixed', color: '#ffffff', top: 0, left: 80 }} className="linkedin"/></Tooltip></Grid>
                 <Grid><Tooltip title="Email"><EmailIcon onClick={this.handleMailClick} style={{ fontSize: 25, position: 'fixed', color: '#ffffff', top: 0, left: 120 }}  className="email"/></Tooltip></Grid>
-                <Grid><Tooltip title="Resume"><AssignmentIndIcon  onClick={this.handleResumeClick} style={{ fontSize: 25, position: 'fixed', color: '#ffffff', top: 0, left: 160 }} /></Tooltip></Grid>
+                <Grid><Link to="/resume"><Tooltip title="Resume"><AssignmentIndIcon  onClick={this.handleResumeClick} style={{ fontSize: 25, position: 'fixed', color: '#ffffff', top: 0, left: 160 }} /></Tooltip></Link></Grid>
               </GridList>
             </React.Fragment>
             

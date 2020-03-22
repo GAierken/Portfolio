@@ -8,6 +8,9 @@ import About from './Components/About';
 import Contact from './Components/Contact';
 import ProjectContainer from './Components/ProjectContainer';
 import { Link as RouterLink } from 'react-router-dom';
+import PDFViewer from './Components/PDFViewer/PDFViewer';
+import PDFJSBackend from './backends/pdfjs.js'
+
 
 class App extends React.Component {
  
@@ -42,6 +45,7 @@ class App extends React.Component {
       <Switch>
        <Route exact path="/" component={ About }></Route>
        <Route exact path="/projects" component={ ProjectContainer }></Route>
+       <Route exact path="/resume" render={() => <PDFViewer backend={PDFJSBackend} src='../public/Guligena_Aierken_Resume.pdf'/>}></Route>
       </Switch>
     </div>
     );
