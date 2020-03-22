@@ -7,7 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import therappoint from './therappoint_image.png'
+
 
 const useStyles = makeStyles({
   root: {
@@ -21,25 +21,30 @@ const useStyles = makeStyles({
 export default function MediaCard(props) {
   const classes = useStyles();
 
+
+  const handleDemoClick = () => {
+      window.location.assign(props.project.demo)
+  }
+  
   return (
-    <Card style={{position: 'absolute', top: 320}} className={classes.root}>
+    <Card style={{position: 'absolute', top: 320, left: props.project.position}} className={classes.root}>
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image={therappoint}
+          image={props.project.img}
           title="Contemplative Reptile"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Therappoint
+            {props.project.name}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-          Appointment scheduling app developed especially for early intervention service agencies 
+          {props.project.des}
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
+        <Button onClick={handleDemoClick} size="small" color="primary">
          Demo
         </Button>
       </CardActions>
