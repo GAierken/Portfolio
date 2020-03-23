@@ -27,7 +27,7 @@ export default function MediaCard(props) {
   }
   
   return (
-    <Card style={{position: 'absolute', top: 320, left: props.project.position}} className={classes.root}>
+    <Card style={{position: 'absolute', top: 320, left: props.project.position, backgroundColor: '#32a852', margin: '0px 10px'}} className={classes.root}>
       <CardActionArea>
         <CardMedia
           className={classes.media}
