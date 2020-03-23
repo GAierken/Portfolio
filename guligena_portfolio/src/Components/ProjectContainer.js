@@ -4,6 +4,8 @@ import MediaCard from './MediaCard'
 import Therappoint from './therappoint_image.png'
 import Flatiron from './shopping_image.png'
 import Museum from './museums_image.png'
+import ProjectDetail from './ProjectDetail'
+
 
 export default class ProjectContainer extends Component {
     state = {
@@ -37,16 +39,24 @@ export default class ProjectContainer extends Component {
         }
 
 
-    ]
+    ],
+        projectCardClicked: false
     }
     
     handleProjectsShow = () => {
      
        return  this.state.projects.map((project) => {
              
-            return <MediaCard key={project.id} project={project}/>
+            return <MediaCard handleCardClicked={this.handleCardClick} key={project.id} project={project}/>
         }
         )
+    }
+    
+    handleCardClick = () => {
+        this.setState({
+            ...this.state,
+            projectCardClicked: !this.state.projectCardClicked
+        })
     }
     
     
@@ -56,7 +66,8 @@ export default class ProjectContainer extends Component {
         return (
          <React.Fragment>
            <Container style={{margin: '0px 10px'}} className="projects">Projects</Container>
-           {this.handleProjectsShow()}
+           {this.state.projectCardClicked ? <ProjectDetail handleBackClick={this.handleCardClick}/> : this.handleProjectsShow()}
+        
          </React.Fragment>
         )
     }
