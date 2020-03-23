@@ -50,8 +50,10 @@
   color:#ffffff;
   width: 100%;
   padding: 20px;
+  text-align: right;
   font-family: 'Oleo Script', cursive;
   font-size: x-large;
+  margin: 0px 10px;
 }
 
 .navbar {
