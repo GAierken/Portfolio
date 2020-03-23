@@ -77,6 +77,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+  opacity: 0.9;
 }
 
 .navfont.navcolor {
@@ -86,13 +87,7 @@
 }
 
 
-.resume {
-  position: absolute;
-  top: 220px;
-  width: 100%;
-  padding: 20px;
-  font-size: xx-large;
-}
+
 
 .about {
   position: fixed;
@@ -112,12 +107,4 @@
   color: #ffffff;
 }
 
-.blogs {
-  position: fixed;
-  top: 270px;
-  width: 100%;
-  padding: 20px;
-  font-size: xx-large;
-  color: #ed6663;
-}
 

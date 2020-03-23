@@ -55,7 +55,7 @@ export default class ProjectContainer extends Component {
         
         return (
          <React.Fragment>
-           <Container className="projects">Projects</Container>
+           <Container style={{margin: '0px 10px'}} className="projects">Projects</Container>
            {this.handleProjectsShow()}
          </React.Fragment>
         )
