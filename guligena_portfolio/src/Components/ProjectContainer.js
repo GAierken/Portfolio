@@ -17,7 +17,8 @@ export default class ProjectContainer extends Component {
             des: "Appointment scheduling app developed especially for early intervention service agencies",
             demo: "https://www.youtube.com/watch?v=QZEsGHZpaoo&feature=youtu.be",
             img: Therappoint,
-            position: 0
+            position: 0,
+            youtube_id: 'QZEsGHZpaoo'
         },
 
          {
@@ -26,7 +27,8 @@ export default class ProjectContainer extends Component {
             des: "E-commerce web-app designed for baby-products",
             demo: "https://www.youtube.com/watch?v=7cNyoHjJjiw&feature=youtu.be",
             img: Flatiron,
-            position: 470
+            position: 470,
+            youtube_id: '7cNyoHjJjiw'
         },
 
         {
@@ -35,12 +37,14 @@ export default class ProjectContainer extends Component {
             des: "Yelp-like web-app for museums in NYC where users can find and review museums",
             demo: "https://www.youtube.com/watch?v=1PeeuhozAIo&feature=youtu.be",
             img: Museum,
-            position: 940
+            position: 940,
+            youtube_id: '1PeeuhozAIo'
         }
 
 
     ],
-        projectCardClicked: false
+        projectCardClicked: false,
+        clickedPro: {}
     }
     
     handleProjectsShow = () => {
@@ -51,11 +55,15 @@ export default class ProjectContainer extends Component {
         }
         )
     }
+
     
-    handleCardClick = () => {
+    
+    handleCardClick = (project) => {
+        
         this.setState({
             ...this.state,
-            projectCardClicked: !this.state.projectCardClicked
+            projectCardClicked: !this.state.projectCardClicked,
+            clickedPro: project
         })
     }
     
@@ -66,7 +74,7 @@ export default class ProjectContainer extends Component {
         return (
          <React.Fragment>
            <Container style={{margin: '0px 10px'}} className="projects">Projects</Container>
-           {this.state.projectCardClicked ? <ProjectDetail handleBackClick={this.handleCardClick}/> : this.handleProjectsShow()}
+           {this.state.projectCardClicked ? <ProjectDetail project={this.state.clickedPro} handleBackClick={this.handleCardClick}/> : this.handleProjectsShow()}
         
          </React.Fragment>
         )

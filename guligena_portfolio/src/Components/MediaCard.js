@@ -27,7 +27,7 @@ export default function MediaCard(props) {
   }
   
   return (
-    <Card  onClick={props.handleCardClicked} style={{position: 'absolute', top: 320, left: props.project.position, backgroundColor: '#d8d8d8'}} className={classes.root}>
+    <Card  onClick={() => props.handleCardClicked(props.project)} style={{position: 'absolute', top: 320, left: props.project.position, backgroundColor: '#d8d8d8'}} className={classes.root}>
       <CardActionArea>
         <CardMedia
           className={classes.media}

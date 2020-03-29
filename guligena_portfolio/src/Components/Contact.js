@@ -7,6 +7,7 @@ import DescriptionIcon from '@material-ui/icons/Description';
 import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
 import {Link} from 'react-router-dom'
 
+
 export default class Contact extends Component {
     
     handleGitHubClick = () => {
