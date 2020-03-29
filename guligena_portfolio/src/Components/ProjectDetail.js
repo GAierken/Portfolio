@@ -1,10 +1,13 @@
 import React from 'react'
-import { Button } from '@material-ui/core'
+import { Button, Container } from '@material-ui/core'
+import YouTube from 'react-youtube-embed'
 
 export default function ProjectDetail(props) {
-    console.log("working")
+    console.log("working", props.project)
     return (
-        <Button onClick={props.handleBackClick} color="primary" style={{top: 500}}>Detail</Button>
-       
+        <React.Fragment>
+            <Container maxWidth='sm' style={{position: 'fixed', top: 300}}><YouTube id={props.project.youtube_id} /></Container>
+            <Button style={{position: 'fixed', top: 620}}onClick={props.handleBackClick} color="primary" >Back</Button>
+        </React.Fragment>
     )
 }
