@@ -44,9 +44,6 @@ export default function MediaCard(props) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button onClick={handleDemoClick} size="small" color="primary">
-         Demo
-        </Button>
       </CardActions>
     </Card>
 
