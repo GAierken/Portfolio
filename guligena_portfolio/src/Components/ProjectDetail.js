@@ -8,6 +8,7 @@ export default function ProjectDetail(props) {
         <React.Fragment>
             <Container maxWidth='sm' style={{position: 'fixed', top: 300}}><YouTube id={props.project.youtube_id} /></Container>
             <Button style={{position: 'fixed', top: 620}}onClick={props.handleBackClick} color="primary" >Back</Button>
+            <Container></Container>
         </React.Fragment>
     )
 }
