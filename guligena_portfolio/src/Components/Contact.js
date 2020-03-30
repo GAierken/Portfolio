@@ -37,11 +37,11 @@ export default class Contact extends Component {
         return (
             <React.Fragment>
               <GridList >
-                <Grid><Tooltip title="GitHub"><GitHubIcon onClick={this.handleGitHubClick} style={{ fontSize: 23, position: 'fixed', color: '#ffffff', top: 0, left: 0 }}  className="contacts"/></Tooltip></Grid>
-                <Grid><Tooltip title="LinkedIn"><LinkedInIcon onClick={this.handleLinkedInClick} style={{ fontSize: 25, position: 'fixed', color: '#ffffff', top: 0, left: 40 }} className="linkedin"/></Tooltip></Grid>
-                <Grid><Tooltip title="Blog"><DescriptionIcon onClick={this.handleDesClick} style={{ fontSize: 25, position: 'fixed', color: '#ffffff', top: 0, left: 80 }} className="linkedin"/></Tooltip></Grid>
-                <Grid><Tooltip title="Email"><EmailIcon onClick={this.handleMailClick} style={{ fontSize: 25, position: 'fixed', color: '#ffffff', top: 0, left: 120 }}  className="email"/></Tooltip></Grid>
-                <Grid><Link to="/resume"><Tooltip title="Resume"><AssignmentIndIcon  onClick={this.handleResumeClick} style={{ fontSize: 25, position: 'fixed', color: '#ffffff', top: 0, left: 160 }} /></Tooltip></Link></Grid>
+                <Grid><Tooltip title="GitHub"><GitHubIcon onClick={this.handleGitHubClick} style={{ fontSize: 23, position: 'fixed', color: '#b39bc8', top: 0, left: 0 }}  className="contacts"/></Tooltip></Grid>
+                <Grid><Tooltip title="LinkedIn"><LinkedInIcon onClick={this.handleLinkedInClick} style={{ fontSize: 25, position: 'fixed', color: '#b39bc8', top: 0, left: 40 }} className="linkedin"/></Tooltip></Grid>
+                <Grid><Tooltip title="Blog"><DescriptionIcon onClick={this.handleDesClick} style={{ fontSize: 25, position: 'fixed', color: '#b39bc8', top: 0, left: 80 }} className="linkedin"/></Tooltip></Grid>
+                <Grid><Tooltip title="Email"><EmailIcon onClick={this.handleMailClick} style={{ fontSize: 25, position: 'fixed', color: '#b39bc8', top: 0, left: 120 }}  className="email"/></Tooltip></Grid>
+                <Grid><Link to="/resume"><Tooltip title="Resume"><AssignmentIndIcon  onClick={this.handleResumeClick} style={{ fontSize: 25, position: 'fixed', color: '#b39bc8', top: 0, left: 160 }} /></Tooltip></Link></Grid>
               </GridList>
             </React.Fragment>
             
