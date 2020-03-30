@@ -22,9 +22,7 @@ export default function MediaCard(props) {
   const classes = useStyles();
 
   
-  const handleDemoClick = () => {
-      window.location.assign(props.project.demo)
-  }
+  
   
   return (
     <Card  onClick={() => props.handleCardClicked(props.project)} style={{position: 'absolute', top: 320, left: props.project.position, backgroundColor: '#d8d8d8'}} className={classes.root}>
