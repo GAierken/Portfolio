@@ -73,7 +73,7 @@ export default class ProjectContainer extends Component {
         
         return (
          <React.Fragment>
-           {this.state.projectCardClicked ? <ProjectDetail project={this.state.clickedPro} handleBackClick={this.handleCardClick}/> : this.handleProjectsShow()}
+           <Container>{this.state.projectCardClicked ? <ProjectDetail project={this.state.clickedPro} handleBackClick={this.handleCardClick}/> : this.handleProjectsShow()}</Container>
         
          </React.Fragment>
         )
