@@ -71,6 +71,7 @@ class App extends React.Component {
 
 
         <Contact/>
+        <About/>
       </div>
       <Switch>
        <Route exact path="/about" component={ About }></Route>

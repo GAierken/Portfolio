@@ -43,10 +43,6 @@ body {
 
 
 .about {
-  position: fixed;
-  top: 210px;
-  width: 100%;
-  padding: 20px;
   font-size: xx-large;
   color: #def2f1;
 }
