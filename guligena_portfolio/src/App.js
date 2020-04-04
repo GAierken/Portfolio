@@ -64,7 +64,7 @@ class App extends React.Component {
             keepMounted
             onClose={this.handleClose}
             >
-            <MenuItem>About</MenuItem>
+            <RouterLink to='/about'><MenuItem>About</MenuItem></RouterLink>
             <MenuItem>Projects</MenuItem>
           </Menu>
           
@@ -72,6 +72,10 @@ class App extends React.Component {
 
         <Contact/>
       </div>
+      <Switch>
+       <Route exact path="/about" component={ About }></Route>
+       <Route exact path="/projects" component={ ProjectContainer }></Route>
+      </Switch>
     </React.Fragment>
     );
   }
