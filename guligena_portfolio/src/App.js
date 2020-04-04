@@ -10,7 +10,7 @@ import ProjectContainer from './Components/ProjectContainer';
 import { Link as RouterLink } from 'react-router-dom';
 import PDFViewer from './Components/PDFViewer/PDFViewer';
 import PDFJSBackend from './backends/pdfjs.js'
-
+import { Typography } from '@material-ui/core';
 
 class App extends React.Component {
  
@@ -21,33 +21,16 @@ class App extends React.Component {
    
    
   return (
-    
-    <div className="App">
+    <React.Fragment>
+        <div className="App">
       
-      <video autoPlay muted loop id="myVideo">
-        <source src={Mp4} type="video/mp4"/>
-      </video>
-      <Container className="content">
-        <h1>GULIGENA AIERKEN</h1>
-          <p>Full Stack Developer | Software Engineer</p>
-          <Contact/>
-      </Container>
-      <Container className="navbar">
-        <Breadcrumbs aria-label="breadcrumb">
-          <RouterLink className="navfont navcolor" to="/" onClick={this.handleClick}>
-            About Me
-          </RouterLink>
-          <RouterLink className="navfont navcolor" to="/projects" onClick={this.handleClick} >
-            Projects
-          </RouterLink>
-      </Breadcrumbs>
-      </Container>
-      <Switch>
-       <Route exact path="/" component={ About }></Route>
-       <Route exact path="/projects" component={ ProjectContainer }></Route>
-       <Route exact path="/resume" render={() => <PDFViewer backend={PDFJSBackend} src='../public/Guligena_Aierken_Resume.pdf'/>}></Route>
-      </Switch>
-    </div>
+        <video autoPlay muted loop id="myVideo">
+         <source src={Mp4} type="video/mp4"/>
+        </video>
+        <Typography variant="h1">Guligena Aierken</Typography>
+        <Contact/>
+      </div>
+    </React.Fragment>
     );
   }
 }
